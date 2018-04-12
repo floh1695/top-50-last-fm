@@ -1,0 +1,8 @@
+<section class="artist-card" ng-repeat="artist in artists track by $index">
+    <img class="artist-img" src="{{artist.image}}" alt="">
+    <section>
+        <h2>{{artist.name}}</h2>
+        <p>Total plays: {{artist.playCount}}</p>
+        <p>Total listeners: {{artist.listeners}}</p>
+    </section>
+</section>

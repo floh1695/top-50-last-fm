@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Top 50 Last Fm</title>
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="stylesheet" href="./screen.css">
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
+    <header class="hero">
+      <h1>LastFM Top 50 Artists</h1>
+    </header>
+
+    <section ng-app="top50App" ng-controller="top50Controller">
+      <section ng-include="'./artist-card.html'"></section>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="./main.js" charset="utf-8"></script>
   </body>
 </html>
